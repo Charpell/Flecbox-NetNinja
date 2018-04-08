@@ -22,21 +22,26 @@ body{
   height: 100px;
   min-width: 100px;
 
+  /* The 3 boxes take equal length because the wrapper is 960px */
+  width: 320px;
+
   /* Expand all boxes to the extreme */
   /* flex-grow: 1; */
 }
 
 .one {
   background: red;
-  flex-grow: 1;
+  
+  /* When the browser get small, how we want to assign size */
+  flex-shrink: 1;
 }
 
 .two {
   background: blue;
-  flex-grow: 2;
+  flex-shrink: 2;
 }
 
 .three {
   background: green;
-  flex-grow: 3;
+  flex-shrink: 3;
 }
