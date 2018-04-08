@@ -15,33 +15,35 @@ body{
 
 .flex-container {
   display: flex;
-  background: #fff
+  background: #fff;
+  flex-wrap: wrap;
+
+  /* flex-wrap: wrap-reverse; */
+  
+  /* Default  */
+  flex-wrap: nowrap;
 }
 
 .box {
   height: 100px;
-  min-width: 100px;
+  min-width: 200px;
 
   /* The 3 boxes take equal length because the wrapper is 960px */
   width: 320px;
 
   /* Expand all boxes to the extreme */
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .one {
   background: red;
-  
-  /* When the browser get small, how we want to assign size */
-  flex-shrink: 1;
+
 }
 
 .two {
   background: blue;
-  flex-shrink: 2;
 }
 
 .three {
   background: green;
-  flex-shrink: 3;
 }
