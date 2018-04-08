@@ -17,6 +17,10 @@ body{
   display: flex;
   background: #fff;
   flex-wrap: wrap;
+  /* flex-flow: column */
+  flex-flow: column;
+  justify-content: center;
+  height: 800px;
 
   /* flex-wrap: wrap-reverse; */
 
@@ -28,19 +32,8 @@ body{
   height: 100px;
 
   /* flex growth is 1, shrink is 1 and the flex-basis is 0 */
-  flex: 1;
+  flex: 0 0 200px;
 
-  /* flex growth, flex shrink, flex basis */
-  /* flex: 1 0 200px; */
-
-  
-  /* flex-basis: 200px; */
-
-  /* The 3 boxes take equal length because the wrapper is 960px */
-  width: 320px;
-
-  /* Expand all boxes to the extreme */
-  flex-grow: 1;
 }
 
 .one {
